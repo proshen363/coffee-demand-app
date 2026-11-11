@@ -46,7 +46,7 @@ button[data-variant="pills"]:hover {border-color: #B5651D !important;}
 def load_all():
     hourly_models = joblib.load(MODELS / "hourly_models.pkl")
     daily_model = joblib.load(MODELS / "daily_model.pkl")
-    hourly = pd.read_pickle(MODELS / "features_hourly.pkl")
+    hourly = pd.read_pickle(MODELS / "features_hourly.pkl.xz", compression="xz")
     daily = pd.read_pickle(MODELS / "features_daily.pkl")
 
     # "normal level" of each future window = sum of the usual hourly (or daily) sales in that window
