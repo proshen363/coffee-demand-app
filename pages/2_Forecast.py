@@ -196,7 +196,7 @@ else:
 
 note_html = f"<div class='hero-note'>{note}</div>" if note else ""
 st.markdown(
-    f"<div class='hero'><div class='hero-title'>Coffee Demand Forecast</div>"
+    f"<div class='hero'><div class='hero-title'>Coffee Shop Demand Forecast</div>"
     f"<div class='hero-sub'>Which products will sell more than usual</div>"
     f"<span class='pill'>Store: {store}</span><span class='pill'>{time_pill}</span>"
     f"<span class='pill'>{base_pill}</span>{note_html}</div>", unsafe_allow_html=True)
